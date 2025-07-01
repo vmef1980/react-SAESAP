@@ -52,7 +52,7 @@ function Register(){
               
               {
                 (selectImage != defaultImage) ?
-                  (<p className="text -sm font-bold">Foto de perfil</p>) :
+                  (<p className="text -sm font-bold text-blue-800">Foto de perfil</p>) :
                   (<p className="text -sm font-bold text-red-800">Seleccione una imagen</p>)
               }
             </div>
