@@ -1,4 +1,4 @@
-function LoginInput({label , paramType , paramId , paramOnChange ,paramPlaceholder , paramValue }){
+function AuthInput({label , paramType , paramId , paramOnChange ,paramPlaceholder , paramValue }){
     return(
       <>
       <div className="mb-2"></div> 
@@ -18,4 +18,4 @@ function LoginInput({label , paramType , paramId , paramOnChange ,paramPlacehold
     );
 }
 
-export default LoginInput;
+export default AuthInput;
