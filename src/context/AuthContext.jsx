@@ -10,8 +10,10 @@ export const AuthProvider = ({children}) => {
 
     useEffect(()=>{
         const storedUser = localStorage.getItem("user");
-        if (storedUser)
-            setUser(JSON.parse(storedUser)); 
+        if (storedUser){ 
+            setUser(JSON.parse(storedUser));
+            navigate("/");
+        }
     }, []);
 
     const login = (email, password) => {
@@ -26,10 +28,10 @@ export const AuthProvider = ({children}) => {
             }
         }
 
-        const logout = () => {
-            setUser(null);
-            localStorage.removeItem("user");
-            navigate("/");
+    const logout = () => {
+        setUser(null);
+        localStorage.removeItem("user");
+        navigate("/");
         }
 
     return (
