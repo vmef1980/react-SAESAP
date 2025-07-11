@@ -1,10 +1,9 @@
-import { Component, useState } from "react";
-//import LoginForm from "../components/auth/LoginForm";
+import { useState } from "react";
 import AuthImage from "../components/auth/AuthImage";
 import AuthForm from "../components/auth/AuthForm";
 import AuthInput from "../components/auth/AuthInput";
 import AuthButton from "../components/auth/AuthButton";
-import { useAuth } from "../context/authContext";
+import { useAuth } from "../context/AuthContext";
 
 function Login(){
   
